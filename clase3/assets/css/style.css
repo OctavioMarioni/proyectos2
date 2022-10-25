@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Roboto ;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.titulo{
+    color: rgb(20, 8, 131);
+    font-size: 24px;
+    font-weight:700;
+    text-align: center;
+    font-family:'Lato';
+    text-decoration:underline;
+    font-style:normal;
+}
+.descripcion{
+    color: white;
+    line-height: 30px;
+    background-color: #8d0808;
+    padding: 10px;
+}
+.lista{
+    list-style-type:none;
+}
+.imagen{
+    background-image: url(../img/paisaje2.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagen2{
+    background-image: url(../img/gamerpc.png);
+    width: 93%;
+    height: 250px;
+    background-size:auto;
+    background-repeat:repeat;
+    
+}

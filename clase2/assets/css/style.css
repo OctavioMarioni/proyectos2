@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 10px;
+}
+table{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+th,td{
+    border:solid 1px;
+    padding: 10px;
+}
+section h3{
+    color: blue;
+}
+form{
+    width: 300px;
+}
+.complicado{
+    background-color: chartreuse;
+    font-weight: 600;
+}
+.odio{
+    border:2px solid;
+}
+.mejor-materia{
+    background-color: darkkhaki;
+}
+#fisica1{
+    background-color: aqua;
+}
+
+.contenedor-parrafos{
+    color: blue;
+    font-size: 24px;
+}
+.contenedor-parrafos{
+    color: brown;
+}
+
+
+#texto{
+    color: brown;
+}
+.parrafo{
+   color: blueviolet;
+}
+p{
+    color: blue !important;
+}

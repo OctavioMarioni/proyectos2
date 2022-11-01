@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.bodyInicio{
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    grid-template-rows: 150px auto auto 100px;
+    grid-template-areas: "nav header    header    header"
+                         "nav productos productos aside"
+                         "nav ofertas   ofertas   aside"
+                         "nav footer    footer    footer";
+    } 
+nav{
+    grid-area: nav;
+    background-color: rgb(24, 4, 209);
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px;
+}
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+#productos{
+    grid-area: productos;
+    background-color: darkgoldenrod;
+    display: grid;
+    width: 500px;
+    height: 400px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 200px;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    align-content: center;
+  
+}
+aside{
+    grid-area: aside;
+    background-color: darkslategray;
+
+}
+#ofertas{
+    grid-area: ofertas;
+    background-color: darkslateblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: forestgreen;
+}
+.bodyContactos{
+    background-color: rgb(24,24,24);
+}
+.formulario{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(34, 34,34,0.3);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 0px rgb(255,255,255);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas: "zona1 zona1"
+                         "zona2 zona3"
+                         "zona4 zona5"
+                         "zona6 zona6"
+                         "zona7 zona7";
+
+}
+
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.formulario label input,.formulario label textarea {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(134,10,10);
+    color: white;
+    margin-top: 10px;
+}
+
+
+.formulario h2:nth-child(1) {
+    grid-area: zona1;
+}
+
+.formulario label:nth-child(2){
+    grid-area: zona2;
+}
+.formulario label:nth-child(3){
+    grid-area: zona3;
+}
+.formulario label:nth-child(4){
+    grid-area: zona4;
+}
+.formulario label:nth-child(5){
+    grid-area: zona5;
+}
+.formulario label:nth-child(6){
+    grid-area: zona6;
+}
+.formulario button:nth-child(7){
+    grid-area: zona7;
+    background-color:rgb(134,10,10) ;
+    border: none;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+

@@ -1,0 +1,25 @@
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  .reproductor {
+    width: 500px;
+    height: 350px;
+    position: relative;
+  }
+  .reproductor iframe {
+    width: inherit;
+    height: inherit;
+  }
+  .reproductor div {
+    width: inherit;
+    height: inherit;
+  }
+  .reproductor div img {
+    width: inherit;
+    height: inherit;
+  }

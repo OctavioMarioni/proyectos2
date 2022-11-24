@@ -1,0 +1,11 @@
+header{
+    grid-area: header;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: clamp(32px,5vw,84px);
+    }
+
+}

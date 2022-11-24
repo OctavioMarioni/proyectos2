@@ -1,0 +1,41 @@
+footer{
+    grid-area: footer;
+    background-color: $colorPrimario;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .btn {
+        margin: 30px;
+        padding: 15px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            background-color: blue;
+            position: absolute;
+            transform: translate(78px,-50%);
+            top: 50%;
+            z-index: -1;
+            transition: 0.25s 0.25s transform , 0.25s width;
+        
+        }
+        &:hover{
+            color: white;
+            &::before{
+                transform: translate(-10px,-50%);
+                width: 100%;
+                transition: 0.25s transform , 0.25s 0.25s width;
+            }
+        }
+        .fa-arrow-right{
+            margin-left: 20px;
+        }
+       
+    }
+}

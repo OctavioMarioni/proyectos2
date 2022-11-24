@@ -1,0 +1,18 @@
+.navbar{
+    background-color: $colorPrimario;
+    margin-bottom: 10px;
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+        li a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}

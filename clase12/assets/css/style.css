@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.topnav{
+    width: 100%;
+    background-color: brown;
+}
+.topnav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+.topnav a {
+    display: block;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width:600px){
+    .topnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.btn{
+    background-color: blueviolet;
+    display: block;
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin: 15px;
+}
+
+.btn:visited{
+    background-color: chartreuse;
+}
+.btn:active{
+    background-color: chocolate;
+}
+
+.parrafos p:nth-child(2){
+    color: aqua;
+}
+.parrafos h3:nth-child(4){
+    color: rgb(133, 14, 107);
+}
+
+.parrafos h3:nth-of-type(1){
+    color: blue;
+}
+
+div:not(.parrafos){
+    color: darkgoldenrod;
+}
+/* Formulario*/
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 250px;
+    margin: 10px;
+}
+form label {
+    margin: 10px;
+}
+.sexo{
+    display: flex;
+}
+form label input{
+    outline: none;
+}
+form label input[type=text]:focus{
+    border: 2px solid brown;
+    border-radius: 3px;
+    
+}
+
+form  input[type=radio]{
+   display: none;
+}
+
+form .radio{
+    background-color: rgb(95, 85, 104);
+    width: 80px;
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+form input[type=radio]:checked + label  {
+    background-color: rgb(19, 73, 190);
+}
+
+form button {
+    width: 80px;
+    margin: 10px;
+}
+/* Galeria de imagenes*/
+
+.containerImg{
+    max-width: 1024px;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,250px);
+    grid-template-areas: "img1 img2 img3"
+                         "img4 img4 img5"
+                         "img6 img7 img5"
+                         "img8 img9 img9";
+}
+.containerImg img:nth-child(1){
+    grid-area: img1;
+}
+.containerImg img:nth-child(2){
+    grid-area: img2;
+}
+.containerImg img:nth-child(3){
+    grid-area: img3;
+}
+.containerImg img:nth-child(4){
+    grid-area: img4;
+}
+.containerImg img:nth-child(5){
+    grid-area: img5;
+}
+.containerImg img:nth-child(6){
+    grid-area: img6;
+}
+.containerImg img:nth-child(7){
+    grid-area: img7;
+}
+.containerImg img:nth-child(8){
+    grid-area: img8;
+}
+.containerImg img:nth-child(9){
+    grid-area: img9;
+}
+.containerImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:800px){
+    .containerImg{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(6,100px);
+        grid-template-areas: "img2 img1 img1 img3 img3"
+                             "img6 img6 img6 img4 img4"
+                             "img6 img6 img6 img4 img4"
+                             "img7 img7 img7 img4 img4"
+                             "img5 img8 img9 img9 img9"
+                             "img5 img8 img9 img9 img9";
+    }
+    }
+}

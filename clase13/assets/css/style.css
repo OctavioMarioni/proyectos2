@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(160, 9, 9);
+  box-shadow: 6px 9px 15px 5px #000000;
+}
+.card p {
+  color: white;
+}
+.card p:nth-of-type(2) {
+  color: white;
+}
+.card h2 {
+  color: white;
+}
+.card:hover p {
+  background-color: burlywood;
+}
+
+.navbar {
+  background-color: rgb(8, 34, 184);
+  margin-bottom: 10px;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+}
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+.navbar ul li a:hover {
+  font-weight: bold;
+}
